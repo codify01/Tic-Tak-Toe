@@ -75,6 +75,10 @@ var turn = "O";
                 document.getElementById('c8').innerHTML = "";
                 document.getElementById('c9').innerHTML = "";
                 document.getElementById('player').innerHTML = "Player " + turn + "'s Turn";
+                let playerStatus = document.getElementById('player').innerHTML;
+                if (playerStatus == "Player X Won" || "Player O Won" ) {
+                    turn = "O"
+                }
         }
 
         function cellOne() {
