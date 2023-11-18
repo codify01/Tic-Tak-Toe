@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tik-Tak-Toe</title>
+    <script src="script.js"></script>
+    <style>
+        td:hover {
+            background-color: gray;
+        }
+        td {
+            padding: 35px;
+            width: 35px;
+            height: 35px;
+            font-size: 40px;
+            text-align: center;
+        }
+        table {
+            border-collapse: collapse;
+            margin: auto;
+        }
+        h1, p {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simple Tic Tak Toe by Codify</h1>
+    <p id="player">Player O's Turn</p>
+    <div id="winner"></div>
+    <table border="1">
+        <tr>
+            <td id="c1" onclick="cellOne()"></td>
+            <td id="c2" onclick="cellTwo()"></td>
+            <td id="c3" onclick="cellThree()"></td>
+        </tr>
+        <tr>
+            <td id="c4" onclick="cellFour()"></td>
+            <td id="c5" onclick="cellFive()"></td>
+            <td id="c6" onclick="cellSix()"></td>
+        </tr>
+        
+            <td id="c7" onclick="cellSeven()"></td>
+            <td id="c8" onclick="cellEight()"></td>
+            <td id="c9" onclick="cellNine()"></td>
+        </tr>
+    </table>
+    <div style="text-align: center; margin-top: 20px;">
+    <button style="padding: 10px; text-align: center; font-size: 20px; background-color: gray;" onclick="reset()">Restart</button>
+    </div>
+</body>
+</html>
